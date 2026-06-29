@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetVitals - Clínica Veterinaria Moderna</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header-principal">
+        <div class="contenedor nav-contenedor">
+            <div class="logo">
+                <span class="icono-logo">🐾</span> <strong>Pet<span class="texto-variante">Vitals</span></strong>
+            </div>
+            <nav class="menu-navegacion">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="tailwind.html">Tailwind CSS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="seccion-hero">
+            <div class="contenedor grid-hero">
+                <div class="contenido-hero">
+                    <span class="etiqueta-bienvenida">Cuidado profesional y amoroso</span>
+                    <h1>El bienestar de tu mascota es nuestra máxima prioridad</h1>
+                    <p>Ofrecemos servicios veterinarios integrales con tecnología de vanguardia y un equipo médico altamente calificado.</p>
+                    <a href="#contacto" class="btn btn-primario">Agendar cita médica</a>
+                </div>
+                <div class="imagen-hero">
+                    <img src="img/mascota.jpg" alt="Perro feliz recibiendo atención veterinaria" class="img-responsiva">
+                </div>
+            </div>
+        </section>
+
+        <section id="servicios" class="seccion-servicios">
+            <div class="contenedor">
+                <div class="encabezado-seccion">
+                    <h2>Nuestros servicios especializados</h2>
+                    <p>Todo lo que tu compañero necesita para una vida larga, sana y feliz.</p>
+                </div>
+
+                <div class="grid-servicios">
+                    <article class="tarjeta-servicio">
+                        <div class="icono-servicio">🩺</div>
+                        <h3>Consulta General</h3>
+                        <p>Chequeos médicos preventivos, diagnóstico temprano y planes de vacunación personalizados.</p>
+                    </article>
+
+                    <article class="tarjeta-servicio">
+                        <div class="icono-servicio">🧪</div>
+                        <h3>Laboratorio Clínico</h3>
+                        <p>Análisis clínicos inmediatos y herramientas de diagnóstico por imagen de alta resolución.</p>
+                    </article>
+
+                    <article class="tarjeta-servicio">
+                        <div class="icono-servicio">✂️</div>
+                        <h3>Estética Canina</h3>
+                        <p>Baño higiénico, corte de pelo según la raza y cuidado especializado de garras y oídos.</p>
+                    </article>
+                </div>
+
+                <div class="contenedor-tabla">
+                    <h3>Horarios de Atención de Especialidades</h3>
+                    <table class="tabla-horarios">
+                        <thead>
+                            <tr>
+                                <th>Servicio</th>
+                                <th>Lunes a Viernes</th>
+                                <th>Sábados y Domingos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <strong><td>Medicina General</td></strong>
+                                <td>08:00 AM - 08:00 PM</td>
+                                <td>09:00 AM - 04:00 PM</td>
+                            </tr>
+                            <tr>
+                                <strong><td>Urgencias 24/7</td></strong>
+                                <td colspan="2" class="celda-destacada">Disponible en Todo Momento</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="seccion-contacto">
+            <div class="contenedor contenedor-corto">
+                <div class="encabezado-seccion">
+                    <h2>Agenda una cita hoy</h2>
+                    <p>Completa el formulario y nos comunicaremos contigo de inmediato para confirmar tu espacio.</p>
+                </div>
+
+                <form action="#" method="post" class="formulario-contacto">
+                    <div class="grupo-formulario">
+                        <label for="nombre">Nombre del propietario:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ej. Herberth Contreras" required>
+                    </div>
+
+                    <div class="grupo-formulario">
+                        <label for="correo">Correo electrónico:</label>
+                        <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+                    </div>
+
+                    <div class="grupo-formulario">
+                        <label for="mascota">Tipo de mascota:</label>
+                        <select id="mascota" name="mascota" required>
+                            <option value="">Selecciona una opción...</option>
+                            <option value="perro">Perro</option>
+                            <option value="gato">Gato</option>
+                            <option value="otro">Otro animal exótico</option>
+                        </select>
+                    </div>
+
+                    <div class="grupo-formulario">
+                        <label for="motivo">Motivo de la consulta:</label>
+                        <textarea id="motivo" name="motivo" rows="4" placeholder="Describe brevemente los síntomas o el servicio requerido..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-formulario">Enviar Solicitud de Cita</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <div class="contenedor grid-pie">
+            <p>&copy; 2026 - PetVitals Clínica Veterinaria. Todos los derechos reservados.</p>
+            <p class="credito-desarrollador">Diseñado por: <span class="nombre-junior">[Nombre del Desarrollador Junior]</span></p>
+        </div>
+    </footer>
+
+</body>
+</html>

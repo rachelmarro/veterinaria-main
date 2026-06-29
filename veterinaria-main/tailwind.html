@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetVitals - Clínica Veterinaria Moderna con Tailwind CSS</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <header class="sticky top-0 bg-white/90 backdrop-blur-md shadow-sm z-50 transition-all">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold flex items-center gap-2">
+                <span aria-hidden="true">🐾</span>
+                <span class="sr-only">Logotipo de la clínica </span>
+                <span>Pet<span class="text-teal-600">Vitals</span></span>
+            </div>
+            <nav>
+                <ul class="flex gap-6 font-medium">
+                    <li><a href="index.html" class="text-slate-600 hover:text-teal-600 transition-colors focus:outline-none focus:ring-2 focus:ring-teal-500 rounded px-2 py-1">Inicio</a></li>
+                    <li><a href="#servicios" class="text-slate-600 hover:text-teal-600 transition-colors focus:outline-none focus:ring-2 focus:ring-teal-500 rounded px-2 py-1">Servicios</a></li>
+                    <li><a href="#contacto" class="text-slate-600 hover:text-teal-600 transition-colors focus:outline-none focus:ring-2 focus:ring-teal-500 rounded px-2 py-1">Contacto</a></li>
+                    <li><a href="tailwind.html" class="text-slate-600 hover:text-teal-600 transition-colors focus:outline-none focus:ring-2 focus:ring-teal-500 rounded px-2 py-1">Tailwind CSS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="bg-gradient-to-br from-teal-50 to-sky-50 py-16 md:py-24 px-6">
+            <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <span class="inline-block bg-teal-100 text-teal-800 text-sm font-semibold px-4 py-1.5 rounded-full">
+                        Cuidado profesional y amoroso
+                    </span>
+                    <h1 class="text-4xl md:text-5xl font-black text-slate-900 tracking-tight leading-tight">
+                        El bienestar de tu mascota es nuestra máxima prioridad
+                    </h1>
+                    <p class="text-lg text-slate-600 leading-relaxed">
+                        Ofrecemos servicios veterinarios integrales con tecnología de vanguardia y un equipo médico altamente calificado para el engreído de la casa.
+                    </p>
+                    <div class="pt-2">
+                        <a href="#contacto" class="inline-block bg-teal-600 hover:bg-teal-700 text-white font-semibold px-8 py-3.5 rounded-xl shadow-lg shadow-teal-600/20 hover:shadow-xl hover:shadow-teal-600/30 transition-all transform hover:-translate-y-0.5 focus:outline-none focus:ring-4 focus:ring-teal-500 focus:ring-offset-2">
+                            Agendar Cita Médica
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-teal-600 to-sky-600 rounded-2xl blur opacity-10"></div>
+                    <img src="img/mascota2.jpg" alt="Perro feliz recibiendo atención médica en PetVitals" class="relative rounded-2xl shadow-xl w-full object-cover">
+                </div>
+            </div>
+        </section>
+
+        <section id="servicios" class="max-w-6xl mx-auto py-20 px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <h2 class="text-3xl font-extrabold text-slate-900 md:text-4xl">Nuestros Servicios Especializados</h2>
+                <p class="text-slate-600">Todo lo que tu compañero necesita para una vida larga, sana y feliz.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <article class="bg-white p-8 rounded-2xl shadow-sm border-t-4 border-teal-500 hover:shadow-md transition-shadow group">
+                    <div class="text-4xl mb-4 bg-teal-50 w-14 h-14 flex items-center justify-center rounded-xl group-hover:scale-110 transition-transform">🩺</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Consulta General</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Chequeos médicos preventivos, diagnóstico temprano y planes de vacunación personalizados.</p>
+                </article>
+
+                <article class="bg-white p-8 rounded-2xl shadow-sm border-t-4 border-sky-500 hover:shadow-md transition-shadow group">
+                    <div class="text-4xl mb-4 bg-sky-50 w-14 h-14 flex items-center justify-center rounded-xl group-hover:scale-110 transition-transform">🧪</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Laboratorio Clínico</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Análisis clínicos inmediatos y herramientas de diagnóstico por imagen de alta resolución.</p>
+                </article>
+
+                <article class="bg-white p-8 rounded-2xl shadow-sm border-t-4 border-amber-500 hover:shadow-md transition-shadow group">
+                    <div class="text-4xl mb-4 bg-amber-50 w-14 h-14 flex items-center justify-center rounded-xl group-hover:scale-110 transition-transform">✂️</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Estética Canina</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Baño higiénico, corte de pelo según la raza y cuidado especializado de garras y oídos.</p>
+                </article>
+            </div>
+
+            <div class="mt-16 bg-white rounded-2xl shadow-sm overflow-hidden border border-slate-100">
+                <div class="p-6 bg-slate-900 text-white">
+                    <h3 class="text-lg font-bold">Horarios de Atención de Especialidades</h3>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-slate-50 border-b border-slate-100">
+                                <th class="p-4 font-semibold text-slate-700">Servicio</th>
+                                <th class="p-4 font-semibold text-slate-700">Lunes a Viernes</th>
+                                <th class="p-4 font-semibold text-slate-700">Sábados y Domingos</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-100">
+                            <tr class="hover:bg-slate-50/50 transition-colors">
+                                <td class="p-4 font-medium text-slate-900">Medicina General</td>
+                                <td class="p-4 text-slate-600">08:00 AM - 08:00 PM</td>
+                                <td class="p-4 text-slate-600">09:00 AM - 04:00 PM</td>
+                            </tr>
+                            <tr class="hover:bg-slate-50/50 transition-colors">
+                                <td class="p-4 font-medium text-slate-900">Urgencias 24/7</td>
+                                <td colspan="2" class="p-4 bg-emerald-50 text-emerald-700 font-bold text-center tracking-wide">
+                                    Disponible en Todo Momento
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="bg-slate-100 py-20 px-6">
+            <div class="max-w-xl mx-auto bg-white p-8 md:p-10 rounded-2xl shadow-lg border border-slate-200/60">
+                <div class="text-center mb-8 space-y-2">
+                    <h2 class="text-2xl font-bold text-slate-900">Agenda una Cita Hoy</h2>
+                    <p class="text-sm text-slate-600">Completa los campos y nos comunicaremos contigo de inmediato.</p>
+                </div>
+
+                <form action="#" method="post" class="space-y-5">
+                    <div>
+                        <label for="nombre" class="block text-sm font-semibold text-slate-700 mb-2">Nombre del Propietario:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ej. Carlos Mendoza" required 
+                               class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 placeholder-slate-400 focus:outline-none focus:border-teal-500 focus:bg-white focus:ring-2 focus:ring-teal-500/20 transition-all text-sm">
+                    </div>
+
+                    <div>
+                        <label for="correo" class="block text-sm font-semibold text-slate-700 mb-2">Correo Electrónico:</label>
+                        <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required 
+                               class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 placeholder-slate-400 focus:outline-none focus:border-teal-500 focus:bg-white focus:ring-2 focus:ring-teal-500/20 transition-all text-sm">
+                    </div>
+
+                    <div>
+                        <label for="mascota" class="block text-sm font-semibold text-slate-700 mb-2">Tipo de Mascota:</label>
+                        <select id="mascota" name="mascota" required 
+                                class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 text-slate-600 focus:outline-none focus:border-teal-500 focus:bg-white focus:ring-2 focus:ring-teal-500/20 transition-all text-sm">
+                            <option value="">Selecciona una opción...</option>
+                            <option value="perro">Perro</option>
+                            <option value="gato">Gato</option>
+                            <option value="otro">Otro animal exótico</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="motivo" class="block text-sm font-semibold text-slate-700 mb-2">Motivo de la consulta:</label>
+                        <textarea id="motivo" name="motivo" rows="4" placeholder="Describe brevemente los síntomas..." required 
+                                  class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 placeholder-slate-400 focus:outline-none focus:border-teal-500 focus:bg-white focus:ring-2 focus:ring-teal-500/20 transition-all text-sm resize-none"></textarea>
+                    </div>
+
+                    <button type="submit" 
+                            class="w-full bg-slate-900 hover:bg-slate-800 text-white font-semibold py-3.5 rounded-xl transition-colors focus:outline-none focus:ring-4 focus:ring-slate-500 focus:ring-offset-2 text-sm mt-2">
+                        Enviar Solicitud de Cita
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 py-8 border-t border-slate-800 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+            <p>&copy; 2026 - PetVitals Clínica Veterinaria. Todos los derechos reservados.</p>
+            <p>Diseñado por: <span class="text-sky-400 font-semibold">[Nombre del Desarrollador Junior]</span></p>
+        </div>
+    </footer>
+
+</body>
+</html>
